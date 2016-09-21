@@ -110,7 +110,7 @@ public class mytholigyGame
 						rules();
 					}
 				System.out.println("who would you rather be greek or Roman");
-				System.out.println("type (1) for Greek");
+				System.out.println("type (1) for Greek"); // (2) for Roman
 				//play greek for now
 				int nat= userInput.nextInt();
 				if(nat==2)
