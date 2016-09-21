@@ -195,7 +195,8 @@ public class mytholigyGame
 										int rowChoice = 0;
 										System.out.println("were would you like to place the Athens gate card. please type the row then the colom");
 										System.out.println("for example A1");
-										String bwa = userInput.nextLine();
+										Scanner userInput1 = new Scanner(System.in);
+										String bwa = userInput1.nextLine();
 										switch (bwa.substring(0,1))
 											{
 											case "a":
@@ -224,7 +225,8 @@ public class mytholigyGame
 										int rowChoice = 0;
 										System.out.println("were would you like to place the Troy gate card please type the row then the column");
 										System.out.println("for example A1");
-										String bwa = userInput.nextLine();
+										Scanner userInput2 = new Scanner(System.in);
+										String bwa = userInput2.nextLine();
 										switch (bwa.substring(0,1))
 											{
 											case "a":
@@ -253,7 +255,8 @@ public class mytholigyGame
 										int rowChoice = 0;
 										System.out.println("were would you like to place the Tartorus gate card please type the row then the colom");
 										System.out.println("for example A1");
-										String bwa = userInput.nextLine();
+										Scanner userInput3 = new Scanner(System.in);
+										String bwa = userInput3.nextLine();
 										switch (bwa.substring(0,1))
 										{
 										case "a":
@@ -277,6 +280,13 @@ public class mytholigyGame
 										board[0][rowChoice][colChoice]= "Tartors";
 										Board();
 									}
+							}
+						System.out.println("do you want to place a character (1) yes (2) no");
+						int nad= userInput.nextInt();
+						if (nad==1)
+							{
+								System.out.println("which character would you like to place?");
+								System.out.println("(1) Athena power=400 (2) Achiles power=300 (3) Hydra power=250");
 							}
 					}
 			}
